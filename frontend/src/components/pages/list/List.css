@@ -1,0 +1,95 @@
+.List {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jobsSelection {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.jobsSelection select {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 200px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.jobsSelection select:focus {
+  border-color: #3498db;
+}
+
+.jobsSelection option {
+  font-size: 14px;
+}
+
+.List > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.Card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #3498db;
+}
+
+.Card p {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.Card button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.Card button:hover {
+  background-color: #c0392b;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .jobsSelection select {
+      width: 150px;
+  }
+
+  .Card {
+      width: 100%;
+  }
+}
